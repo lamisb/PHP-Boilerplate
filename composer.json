@@ -10,8 +10,11 @@
   "autoload": {
     "psr-4": {
       "Boilerplate\\": "src",
-      "Boilerplate\\Tests\\": "test"
+      "Boilerplate\\Tests\\": "tests  "
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.*   "
   },
   "require": {
     "php": "7.*"
