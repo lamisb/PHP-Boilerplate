@@ -1,0 +1,20 @@
+{
+  "name": "PHP Boilerplate",
+  "Description": "Boilerplate for loading namespaces",
+  "authors": [
+    {
+      "name": "Lamis Beirkdar",
+    },
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Boilerplate": "src",
+      "Boilerplate\\Tests": "test"
+    }
+  },
+  "require": {
+    "php" : "7.*"
+  }
+}
+
