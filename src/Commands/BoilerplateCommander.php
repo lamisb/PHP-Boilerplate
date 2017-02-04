@@ -7,7 +7,7 @@ namespace Boilerplate\Commands;
 class BoilerplateCommander
 {
     /**
-     * @var
+     * @var String
      */
     private $command;
 
