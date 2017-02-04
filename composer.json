@@ -3,18 +3,18 @@
   "Description": "Boilerplate for loading namespaces",
   "authors": [
     {
-      "name": "Lamis Beirkdar",
-    },
+      "name": "Lamis Beirkdar"
+    }
   ],
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Boilerplate": "src",
-      "Boilerplate\\Tests": "test"
+      "Boilerplate\\": "src",
+      "Boilerplate\\Tests\\": "test"
     }
   },
   "require": {
-    "php" : "7.*"
+    "php": "7.*"
   }
 }
 
