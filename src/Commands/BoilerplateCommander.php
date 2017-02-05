@@ -8,7 +8,7 @@ class BoilerplateCommander
 {
     /**
      * @var String
-     */
+     */ 
     private $command;
 
     /**
