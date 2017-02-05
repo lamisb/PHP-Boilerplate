@@ -2,7 +2,7 @@
 
 Boilerplate for setting up PHP 7 with composer PSR4 and phpunit
 
-
+**NOTE** I advice you to use vagrant and not mess with your mac
 
 ### MAC Pro Development Environment Steps: 
 * Install XCode https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/
@@ -19,7 +19,8 @@ $  brew install php71
     mkdir -p ~/Library/LaunchAgents
     cp /usr/local/opt/php71/homebrew.mxcl.php71.plist ~/Library/LaunchAgents/
     launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist
-* also make sure that /usr/loca/sbin is loaded first in $PATH 
+* also make sure that /usr/loca/sbin is loaded first in $PATH otherwise edit it
+* install composer and phpunit
 ```sh
 $ brew install composer
 $ brew install phpunit
@@ -28,7 +29,6 @@ $ brew install phpunit
 ```sh
 $ brew install nginx
 ```
-* modify php-brew sudo vim /private/etc/php-fpm.conf  group name and log file
 * Modify nginx in /usr/local/etc/nginx/
 ```sh
 $ cd /usr/local/etc/nginx
