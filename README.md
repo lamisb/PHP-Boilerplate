@@ -1,5 +1,4 @@
 # Boilerplate 
-
 Boilerplate for setting up PHP 7 with composer PSR4 and phpunit
 
 **NOTE** I advice you to use vagrant and not mess with your mac

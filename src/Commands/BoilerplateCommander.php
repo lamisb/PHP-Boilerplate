@@ -14,7 +14,7 @@ class BoilerplateCommander
     /**
      * @return String
      */
-    public function getCommand() : String
+    public function getCommand(): String
     {
         return $this->command;
     }
@@ -23,7 +23,7 @@ class BoilerplateCommander
      * @param mixed $command
      * @return BoilerplateCommander
      */
-    public function setCommand(String $command) : BoilerplateCommander
+    public function setCommand(String $command): BoilerplateCommander
     {
         $this->command = $command;
         return $this;
