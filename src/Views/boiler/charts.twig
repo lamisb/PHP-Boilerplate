@@ -1,0 +1,19 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <h3>Top 100 Movies</h3>
+    <b>Backend Execution Time : </b>   {{ execute_time }} ms
+    <p class="important">
+    <table  class="table">
+        {% for movie in movies %}
+            <tr>
+            <td>#{{ loop.index }}</td>
+            <td>{{ movie.title }}</td>
+            <td>{{ movie.rating }}</td>
+            <td>{{ movie.count }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    </p>
+{% endblock %}

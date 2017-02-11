@@ -7,7 +7,7 @@ use Silex\Application;
  * Class BoilerplateController
  * @package Boilerplate\Controllers
  */
-class BoilerplateController
+class BoilerplateController extends BaseController
 {
 
     /**
@@ -28,28 +28,19 @@ class BoilerplateController
      * @return string
      */
     public function indexAction() {
-        $bCommander1 =  $this->app['boilerplate_commander'];
-        $bCommander2 =  $this->app['boilerplate_commander'];
-        $bCommander3 =  $this->app['boilerplate_commander'];
-        echo $bCommander1->getCommand().PHP_EOL;
-        echo $bCommander2->getCommand().PHP_EOL;
-        echo $bCommander3->getCommand().PHP_EOL;
 
-        $bCommander1u =  $this->app['boilerplate_commander_unique'];
-        $bCommander2u =  $this->app['boilerplate_commander_unique'];
-        $bCommander3u =  $this->app['boilerplate_commander_unique'];
-        echo $bCommander1u->getCommand().PHP_EOL;
-        echo $bCommander2u->getCommand().PHP_EOL;
-        echo $bCommander3u->getCommand().PHP_EOL;
-//        die();
-        return "Well hello there!!!";
+        return $this->getTwigService()->render('boiler/charts.twig', array(
+            'movies' => [],
+            'execute_time' => '0'
+        ));
     }
 
     /**
-     * @return string
+     * @return Twig
      */
-    public function testAction($id) {
-        return $id;
+    private function getTwigService()
+    {
+        return $this->app['twig'];
     }
 }
 
