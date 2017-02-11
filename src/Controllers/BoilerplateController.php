@@ -44,4 +44,3 @@ class BoilerplateController extends BaseController
     }
 }
 
-
